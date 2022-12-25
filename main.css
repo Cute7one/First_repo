@@ -10,60 +10,59 @@
 .header {
     display: flex;
     background: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(10px);
     width: 100%;
-    left: 0px;
-    top: 0px;
+    height: 120px;
 }
 
 .header__container {
     flex-grow: 1;
     text-align: center;
-    padding-bottom: 20px;
 }
 
 .img {
-    width: 55.7px;
-    height: 100px;
-    padding: 2px;
+    padding-left: 22px;
+    padding-top: 22px;
+    padding-bottom: 22px;
 }
 
 .header__container__h1 {
     font-weight: 400;
     font-size: 48px;
-    line-height: 71px;
     text-transform: uppercase;
-    text-align: center;
+    text-align: center; 
+    margin: 0;  
+    padding-top: 10px; 
 }
 
 .header__container__h2 {
     font-weight: 400;
     font-size: 36px;
-    line-height: 53px;
     text-align: center;
-    width: 100%;
-    height: 71px;
+    margin: 0;
+    padding-bottom: 40px;
 }
 
 .body {
     background: url('./images/background.jpg');
-    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 3800px;
 }
 
 .footer {
+    display: flex;
+    justify-content: space-between;
     background: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(10px);
     position: fixed;
     bottom: 0;
-    left: 0;
     width: 100%;
-    height: 100px;
 }
 
 .footer_adress {
     font-size: 20px;
     padding-left: 40px;
-    padding-top: 10px;
+    padding-top: 20px;
     float: left;
 }
 
@@ -73,17 +72,27 @@
     color:#000000;
 }
 
+.city {
+    white-space: nowrap;
+    padding-left: 70px;
+}
+
+.phone1 {
+    padding-left: 7%;
+}
+
 .site_url {
-    padding-right:40px;
-    margin-top:20px;
-    float:right;
+    display: flex;
 }
 
 .site_url_buttom {
-    padding: 5px 15px 2px 15px;
+    display: flex;
+    padding: 35px 35px 35px 35px;
     box-sizing: border-box;
-    border: 2px solid #000000;
-    border-radius: 21px;
+}
+
+.site_url_plus {
+    padding: 35px 35px 35px 3px;
 }
 
 @media screen and (min-width: 1200px) {
