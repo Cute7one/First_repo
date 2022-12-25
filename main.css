@@ -11,9 +11,7 @@
     display: flex;
     background: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(20px);
-    position: absolute;
     width: 100%;
-    height: 144px;
     left: 0px;
     top: 0px;
 }
@@ -25,11 +23,8 @@
 }
 
 .img {
-    position: absolute;
     width: 55.7px;
     height: 100px;
-    left: 22px;
-    top: 22px;
     padding: 2px;
 }
 
@@ -39,7 +34,6 @@
     line-height: 71px;
     text-transform: uppercase;
     text-align: center;
-    position: center; 
 }
 
 .header__container__h2 {
@@ -47,11 +41,8 @@
     font-size: 36px;
     line-height: 53px;
     text-align: center;
-    position: absolute;
-    width: 1362px;
+    width: 100%;
     height: 71px;
-    left: 100px;
-    top: 80px;
 }
 
 .body {
@@ -62,18 +53,18 @@
 .footer {
     background: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(20px);
-    position:fixed;
-    bottom:0;
-    left:0;
-    width:100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     height: 100px;
 }
 
 .footer_adress {
-    font-size:20px;
-    padding-left:40px;
+    font-size: 20px;
+    padding-left: 40px;
     padding-top: 10px;
-    float:left;
+    float: left;
 }
 
 .footer_adress_adress {
@@ -93,5 +84,21 @@
     box-sizing: border-box;
     border: 2px solid #000000;
     border-radius: 21px;
+}
+
+@media screen and (min-width: 1200px) {
+
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+    .header {
+        padding-bottom: 10px;
+    }
+}
+
+
+
+@media (max-width: 500px) {
+
 }
 
